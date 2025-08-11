@@ -1,27 +1,138 @@
 <!DOCTYPE html>
 <html>
- <head>
-   <title>Austin Jang Portfolio</title>
-   <link rel="stylesheet" href="css/styles.css">
- </head>
- <body>
-   <nav>
-     <ul>
-       <!-- <li><a href=/>Home</a></li> -->
-       <li><a href=jang_cv.pdf>C.V.</a></li>
-     </ul>
-   </nav>
-   <div class=”container”>
-     <div class=”blurb”>
-       <h1>Austin Jang</h1>
-       <p>I am a Fourth Year Joint PhD candidate in Statistics & Data Science and Political Science at Yale University. 
-        My primary research interests are robust causal inference, machine-learning based Monte Carlo, and influence function based methods.</a></p>
-     </div>
-   </div>
-   <footer>
-   <ul>
-     <li><a href=”mailto:YOUREMAIL”>austin.jang@yale.edu</a></li>
-   </ul>
-   </footer>
- </body>
+<head>
+    <title>Austin Jang</title>
+    <style>
+        body {
+            margin: 60px auto;
+            width: 70%;
+            font-family: 'Helvetica', 'Arial', 'Sans-Serif';
+        }
+        nav ul, footer ul {
+            font-family:'Helvetica', 'Arial', 'Sans-Serif';
+            padding: 0px;
+            list-style: none;
+            font-weight: bold;
+        }
+        nav ul li, footer ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        a {
+            text-decoration: none;
+            color: #999;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        h1 {
+            font-size: 3em;
+            font-family:'Helvetica', 'Arial', 'Sans-Serif';
+        }
+        h2 {
+            font-size: 1.8em;
+            font-family:'Helvetica', 'Arial', 'Sans-Serif';
+            margin-top: 2em;
+            margin-bottom: 0.5em;
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.4em;
+            color: #333;
+        }
+        .research-item {
+            margin-bottom: 1.5em;
+        }
+        .research-title {
+            font-weight: bold;
+            margin-bottom: 0.3em;
+        }
+        .coauthors {
+            font-style: italic;
+            color: #666;
+            font-size: 0.9em;
+        }
+        .publication-info {
+            color: #666;
+            font-size: 0.9em;
+            margin-top: 0.2em;
+        }
+        footer {
+            border-top: 1px solid #d5d5d5;
+            font-size: .8em;
+            margin-top: 3em;
+        }
+        ul.posts { 
+            margin: 20px auto 40px; 
+            font-size: 1.2em;
+        }
+        ul.posts li {
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="jang_cv.pdf">CV</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <div class="blurb" id="about">
+            <h1>Austin Jang</h1>
+            <p>I am a PhD candidate in Statistics & Data Science and Political Science at Yale University. My research lies at the intersection of political methodology, statistics, and computational social science, with a focus on simulation-based inference, diagnostics, and the principled interpretation of statistical quantities.</p>
+            
+            <p>I develop computational methods and new ways of thinking about familiar statistical practices, helping researchers understand both what they can legitimately claim from their analyses and what they cannot. My work addresses the crucial step of translating statistical output into scientific claims with greater rigor, transparency, and honesty about the limits of what data can support.</p>
+        </div>
+
+        <div id="research">
+            <h2>Publications</h2>
+            <div class="research-item">
+                <div class="research-title">Gnostic notes on temporal validity</div>
+                <div class="coauthors">with Molly Offer-Westort, Serena Wang, and P.M. Aronow</div>
+                <div class="publication-info"><em>Research & Politics</em>, 2024</div>
+            </div>
+
+            <h2>Select Working Papers</h2>
+            
+            <div class="research-item">
+                <div class="research-title">On the Foundations of the Design-Based Approach</div>
+                <div class="coauthors">with P.M. Aronow and Molly Offer-Westort</div>
+                <div class="publication-info">Under review</div>
+            </div>
+
+            <div class="research-item">
+                <div class="research-title">Support for Democracy</div>
+                <div class="coauthors">with Milan Svolik</div>
+            </div>
+
+            <div class="research-item">
+                <div class="research-title">Why Do Low-Powered Voters Participate in Governance?</div>
+                <div class="coauthors">with Eliza Oak</div>
+            </div>
+
+            <div class="research-item">
+                <div class="research-title">Adversarial Parameter Selection for Simulation Studies</div>
+            </div>
+
+            <div class="research-item">
+                <div class="research-title">A Practical Guide to Influence Functions</div>
+            </div>
+
+            <div class="research-item">
+                <div class="research-title">Addressing Differential Attrition in the Gary Negative Income Tax Experiment</div>
+                <div class="coauthors">with Molly Offer-Westort and P.M. Aronow</div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <ul>
+            <li><a href="mailto:austin.jang@yale.edu">austin.jang@yale.edu</a></li>
+        </ul>
+    </footer>
+</body>
 </html>
